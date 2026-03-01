@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        marketplace: {
+          surface: "hsl(var(--marketplace-surface))",
+          "surface-hover": "hsl(var(--marketplace-surface-hover))",
+          success: "hsl(var(--marketplace-success))",
+          warning: "hsl(var(--marketplace-warning))",
+          info: "hsl(var(--marketplace-info))",
+          gold: "hsl(var(--marketplace-gold))",
+          purple: "hsl(var(--marketplace-purple))",
+          rare: "hsl(var(--marketplace-rare))",
+          "super-rare": "hsl(var(--marketplace-super-rare))",
+          urgency: "hsl(var(--marketplace-urgency))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
