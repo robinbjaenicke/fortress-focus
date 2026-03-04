@@ -15,7 +15,7 @@
     --popover: 228 12% 14%;
     --popover-foreground: 210 20% 92%;
 
-    --primary: 142 60% 50%;
+    --primary: 168 50% 48%;
     --primary-foreground: 228 14% 8%;
 
     --secondary: 228 10% 20%;
@@ -32,23 +32,23 @@
 
     --border: 228 10% 22%;
     --input: 228 10% 20%;
-    --ring: 142 60% 50%;
+    --ring: 168 50% 48%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 228 14% 9%;
     --sidebar-foreground: 210 20% 92%;
-    --sidebar-primary: 142 60% 50%;
+    --sidebar-primary: 168 50% 48%;
     --sidebar-primary-foreground: 228 14% 8%;
     --sidebar-accent: 228 12% 18%;
     --sidebar-accent-foreground: 210 20% 92%;
     --sidebar-border: 228 10% 22%;
-    --sidebar-ring: 142 60% 50%;
+    --sidebar-ring: 168 50% 48%;
 
     /* Custom marketplace tokens */
     --marketplace-surface: 228 12% 16%;
     --marketplace-surface-hover: 228 12% 19%;
-    --marketplace-success: 142 60% 50%;
+    --marketplace-success: 168 50% 48%;
     --marketplace-warning: 38 92% 50%;
     --marketplace-info: 210 80% 55%;
     --marketplace-gold: 45 90% 55%;
