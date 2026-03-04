@@ -1,9 +1,9 @@
 import { Star, CheckCircle2 } from "lucide-react";
 
 const reviews = [
-  { user: "St****AB", date: "February 20, 2026", rating: 5 },
-  { user: "RN****AY", date: "January 20, 2026", rating: 5 },
-  { user: "Ch****Od", date: "January 20, 2026", rating: 5 },
+  { user: "St****AB", date: "Feb 20, 2026", rating: 5, comment: "Got my account in 2 minutes, all skins were there. Smooth process." },
+  { user: "RN****AY", date: "Jan 15, 2026", rating: 5, comment: "Email access worked right away. Changed everything without issues." },
+  { user: "Ch****Od", date: "Dec 28, 2025", rating: 5, comment: "Legit seller, fast delivery. Account had more skins than expected." },
 ];
 
 const ReviewsSection = () => {
@@ -28,7 +28,8 @@ const ReviewsSection = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-foreground">{review.user}</p>
-                <p className="text-xs text-muted-foreground">{review.date}</p>
+                <p className="text-xs text-muted-foreground mt-0.5">{review.comment}</p>
+                <p className="text-xs text-muted-foreground/60 mt-1.5">{review.date}</p>
               </div>
             </div>
             <div className="flex items-center gap-0.5">
