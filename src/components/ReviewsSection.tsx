@@ -1,9 +1,9 @@
 import { Star, CheckCircle2 } from "lucide-react";
 
 const reviews = [
-  { user: "St****AB", date: "Feb 20, 2026", rating: 5, comment: "Got my account in 2 minutes, all skins were there. Smooth process." },
-  { user: "RN****AY", date: "Jan 15, 2026", rating: 5, comment: "Email access worked right away. Changed everything without issues." },
-  { user: "Ch****Od", date: "Dec 28, 2025", rating: 5, comment: "Legit seller, fast delivery. Account had more skins than expected." },
+  { user: "St****AB", date: "Feb 20, 2026", rating: 5, comment: "Got my account in 2 minutes, all skins were there. Smooth process" },
+  { user: "RN****AY", date: "Jan 15, 2026", rating: 5, comment: "Email access worked right away. Changed everything without issues" },
+  { user: "Ch****Od", date: "Dec 28, 2025", rating: 5, comment: "Legit seller, fast delivery. Account had more skins than expected.." },
 ];
 
 const ReviewsSection = () => {
