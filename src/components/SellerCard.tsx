@@ -1,8 +1,8 @@
 import { Star, ExternalLink, BadgeCheck } from "lucide-react";
 
-const SellerCard = () => {
+const SellerCard = ({ className }: { className?: string }) => {
   return (
-    <div className="marketplace-card p-4 space-y-3">
+    <div className={`marketplace-card p-4 space-y-3 ${className || ''}`}>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">
