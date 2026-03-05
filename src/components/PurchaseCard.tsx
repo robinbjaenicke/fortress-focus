@@ -58,7 +58,6 @@ const PurchaseCard = () => {
       {/* Secure payment */}
       <div className="text-center space-y-1">
         <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
-          <Shield className="w-3 h-3 bg-destructive-foreground text-destructive-foreground" />
           Secure payment process
         </p>
         <p className="text-xs text-muted-foreground/70">
