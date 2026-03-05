@@ -31,7 +31,7 @@ const TrustCards = () => {
       {/* Marketplace Protection */}
       <div className="marketplace-card p-4 space-y-3">
         <h3 className="text-sm font-semibold text-foreground flex items-center gap-2">
-          <ShieldCheck className="w-4 h-4 text-marketplace-info" />
+          <ShieldCheck className="w-4 h-4" style={{ color: '#3db8a5' }} />
           Marketplace Protection
         </h3>
         <ul className="space-y-1.5 text-xs text-muted-foreground">
