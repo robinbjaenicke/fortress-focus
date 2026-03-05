@@ -6,7 +6,7 @@ const PurchaseCard = () => {
       {/* Platform badge */}
       <div className="flex items-center gap-2">
         <span className="marketplace-badge flex items-center gap-1">
-          <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current"><path d="M8.985 2.596v17.548l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.181.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.153 0-3.21-1.263-4.834-4.003-5.808C12.273 3.4 10.47 2.98 8.985 2.596zM2 17.67c2.355.86 4.756 1.295 6.625.443 1.642-.748 1.895-2.321.085-3.18-1.252-.594-3.004-.976-4.671-1.635C1.64 12.37.753 11.143.753 9.238c0-2.016 1.3-3.37 3.96-3.849l2.275 4.228c-1.585.086-3.34.465-3.34 1.542 0 .89 1.24 1.279 2.703 1.748 2.926.937 5.073 2.162 5.073 4.807 0 3.04-2.313 4.672-6.265 4.406L2 17.67z"/></svg>
+          <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current"><path d="M8.985 2.596v17.548l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.181.76.814.76 1.505v5.875c2.441 1.193 4.362-.002 4.362-3.153 0-3.21-1.263-4.834-4.003-5.808C12.273 3.4 10.47 2.98 8.985 2.596zM2 17.67c2.355.86 4.756 1.295 6.625.443 1.642-.748 1.895-2.321.085-3.18-1.252-.594-3.004-.976-4.671-1.635C1.64 12.37.753 11.143.753 9.238c0-2.016 1.3-3.37 3.96-3.849l2.275 4.228c-1.585.086-3.34.465-3.34 1.542 0 .89 1.24 1.279 2.703 1.748 2.926.937 5.073 2.162 5.073 4.807 0 3.04-2.313 4.672-6.265 4.406L2 17.67z" /></svg>
           PlayStation
         </span>
         <span className="marketplace-badge flex items-center gap-1">
@@ -58,7 +58,7 @@ const PurchaseCard = () => {
       {/* Secure payment */}
       <div className="text-center space-y-1">
         <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
-          <Shield className="w-3 h-3" />
+          <Shield className="w-3 h-3 bg-destructive-foreground text-destructive-foreground" />
           Secure payment process
         </p>
         <p className="text-xs text-muted-foreground/70">
@@ -71,8 +71,8 @@ const PurchaseCard = () => {
         <TrendingUp className="w-3 h-3" />
         High-demand account type
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default PurchaseCard;
