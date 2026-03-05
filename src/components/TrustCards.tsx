@@ -1,8 +1,8 @@
 import { Mail, KeyRound, UserCheck, ShieldCheck, CheckCircle2 } from "lucide-react";
 
-const TrustCards = () => {
+const TrustCards = ({ className }: { className?: string }) => {
   return (
-    <div className="space-y-3">
+    <div className={`space-y-3 ${className || ''}`}>
       {/* Full Access Card */}
       <div className="marketplace-card p-4 space-y-3">
         <h3 className="text-sm font-semibold text-foreground flex items-center gap-2">

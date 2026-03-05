@@ -7,13 +7,14 @@ import SellerCard from "@/components/SellerCard";
 import TrustCards from "@/components/TrustCards";
 import ReviewsSection from "@/components/ReviewsSection";
 import OtherOffers from "@/components/OtherOffers";
+import StickyBuyBar from "@/components/StickyBuyBar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <MarketplaceHeader />
 
-      <main className="max-w-7xl mx-auto px-4 py-6">
+      <main className="max-w-7xl mx-auto px-4 py-6 pb-20 lg:pb-6">
         {/* Breadcrumb */}
         <nav className="text-xs text-muted-foreground mb-4">
           <span className="hover:text-foreground cursor-pointer">Fortnite</span>
@@ -33,17 +34,27 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Main Grid */}
+        {/* Main Grid - flat children with CSS order for mobile reordering */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          {/* Left Column */}
-          <div className="lg:col-span-2 space-y-5">
+          {/* ProductMedia: order 1 mobile, spans left on desktop */}
+          <div className="lg:col-span-2 lg:row-start-1 order-1">
             <ProductMedia />
+          </div>
+
+          {/* PurchaseCard: order 2 on mobile (right after image+title), right col on desktop */}
+          <div className="order-2 lg:order-none lg:row-start-1 lg:row-span-3 lg:col-start-3 space-y-4">
+            <PurchaseCard />
+            <SellerCard className="hidden lg:block" />
+            <TrustCards className="hidden lg:block" />
+          </div>
+
+          {/* DescriptionCard: order 3 on mobile */}
+          <div className="lg:col-span-2 lg:row-start-2 order-3">
             <DescriptionCard />
           </div>
 
-          {/* Right Column */}
-          <div className="space-y-4">
-            <PurchaseCard />
+          {/* Seller + Trust on mobile only (after description) */}
+          <div className="order-4 lg:hidden space-y-4">
             <SellerCard />
             <TrustCards />
           </div>
@@ -54,6 +65,9 @@ const Index = () => {
           <ReviewsSection />
           <OtherOffers />
         </div>
+
+        {/* Sticky Mobile Buy Bar */}
+        <StickyBuyBar />
       </main>
 
       <MarketplaceFooter />
