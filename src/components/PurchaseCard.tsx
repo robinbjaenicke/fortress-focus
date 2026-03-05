@@ -1,4 +1,4 @@
-import { Zap, Shield, Mail, KeyRound, Clock, TrendingUp, ShieldCheck } from "lucide-react";
+import { Zap, Shield, Mail, KeyRound, Clock, TrendingUp } from "lucide-react";
 
 const PurchaseCard = () => {
   return (
@@ -58,7 +58,7 @@ const PurchaseCard = () => {
       {/* Secure payment */}
       <div className="text-center space-y-1">
         <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
-          <ShieldCheck className="w-4 h-4 text-primary" />
+          
           Secure payment process
         </p>
         <p className="text-xs text-muted-foreground/70">
