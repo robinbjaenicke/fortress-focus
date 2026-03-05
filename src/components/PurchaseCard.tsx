@@ -43,7 +43,7 @@ const PurchaseCard = () => {
       {/* Price */}
       <div className="space-y-1">
         <p className="text-xs text-muted-foreground">Price:</p>
-        <p className="text-3xl font-extrabold text-foreground">$24.99</p>
+        <p className="text-2xl md:text-3xl font-extrabold text-foreground">$24.99</p>
       </div>
 
       {/* Benefit stack */}
