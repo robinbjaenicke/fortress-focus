@@ -5,8 +5,8 @@ import thumb2 from "@/assets/product-thumb-2.png";
 
 const offers = [
   {
-    title: "With Email, Guaranteed 5-20 Random Skins",
-    platform: "PlayStation",
+    title: "Email Access | 5-20 Random Skins Guaranteed",
+    platforms: ["PlayStation", "Xbox", "PC"],
     price: "$5.99",
     seller: "GoldMarket",
     rating: "100.00%",
@@ -14,8 +14,8 @@ const offers = [
     image: thumb1,
   },
   {
-    title: "With At Least One RARE SKIN (OG Ghoul Trooper, OG Renegade R...)",
-    platform: "PlayStation",
+    title: "Rare Skin Bundle | OG Ghoul Trooper, Renegade Raider & More",
+    platforms: ["PlayStation", "Xbox", "PC"],
     price: "$34.99",
     seller: "GoldMarket",
     rating: "100.00%",
@@ -23,8 +23,8 @@ const offers = [
     image: productHero,
   },
   {
-    title: "With At Least One SUPER RARE SKIN",
-    platform: "PlayStation",
+    title: "Super Rare Skin Pack | Ultra Exclusive OG Accounts",
+    platforms: ["PlayStation", "Xbox", "PC"],
     price: "$39.99",
     seller: "GoldMarket",
     rating: "100.00%",
@@ -51,9 +51,13 @@ const OtherOffers = () => {
               <img src={offer.image} alt={offer.title} className="w-full h-full object-cover" />
             </div>
             <div className="p-3 space-y-2.5">
-            <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <Gamepad2 className="w-3 h-3" />
-              {offer.platform}
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground flex-wrap">
+              {offer.platforms.map((p) => (
+                <span key={p} className="inline-flex items-center gap-1 bg-muted/60 rounded px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground">
+                  <Gamepad2 className="w-2.5 h-2.5" />
+                  {p}
+                </span>
+              ))}
             </div>
             <p className="text-xs text-foreground font-medium leading-snug line-clamp-2">
               {offer.title}
