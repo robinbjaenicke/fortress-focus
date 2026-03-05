@@ -67,7 +67,7 @@ const PurchaseCard = () => {
       </div>
 
       {/* Buy Now Button */}
-      <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-lg hover:opacity-90 transition-opacity text-sm">
+      <button className="w-full bg-primary text-primary-foreground font-bold py-[0.85rem] md:py-3 rounded-lg hover:opacity-90 transition-opacity text-[0.935rem] md:text-sm">
         Buy Now
       </button>
 
