@@ -66,8 +66,6 @@ const Index = () => {
           <OtherOffers />
         </div>
 
-        {/* Sticky Mobile Buy Bar */}
-        <StickyBuyBar />
       </main>
 
       <MarketplaceFooter />
