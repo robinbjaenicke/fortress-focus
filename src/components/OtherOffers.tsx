@@ -1,4 +1,4 @@
-import { Zap, Star, Gamepad2 } from "lucide-react";
+import { Zap, Star, Gamepad2, Monitor } from "lucide-react";
 import productHero from "@/assets/product-hero.jpg";
 import thumb1 from "@/assets/product-thumb-1.png";
 import thumb2 from "@/assets/product-thumb-2.png";
@@ -6,7 +6,7 @@ import thumb2 from "@/assets/product-thumb-2.png";
 const offers = [
   {
     title: "Email Access | 5-20 Random Skins Guaranteed",
-    platforms: ["PlayStation", "Xbox", "PC"],
+    platforms: ["PC", "PlayStation", "Xbox", "Nintendo"],
     price: "$5.99",
     seller: "GoldMarket",
     rating: "100%",
@@ -15,7 +15,7 @@ const offers = [
   },
   {
     title: "Rare Skin Bundle | OG Ghoul Trooper, Renegade Raider & More",
-    platforms: ["PlayStation", "Xbox", "PC"],
+    platforms: ["PC", "PlayStation", "Xbox", "Nintendo"],
     price: "$34.99",
     seller: "GoldMarket",
     rating: "100%",
@@ -24,7 +24,7 @@ const offers = [
   },
   {
     title: "Super Rare Skin Pack | Ultra Exclusive OG Accounts",
-    platforms: ["PlayStation", "Xbox", "PC"],
+    platforms: ["PC", "PlayStation", "Xbox", "Nintendo"],
     price: "$39.99",
     seller: "GoldMarket",
     rating: "100%",
@@ -54,7 +54,7 @@ const OtherOffers = () => {
             <div className="flex items-center gap-1.5 text-xs text-muted-foreground flex-wrap">
               {offer.platforms.map((p) => (
                 <span key={p} className="inline-flex items-center gap-1 bg-muted/60 rounded px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground">
-                  <Gamepad2 className="w-2.5 h-2.5" />
+                  {p === "PC" ? <Monitor className="w-2.5 h-2.5" /> : <Gamepad2 className="w-2.5 h-2.5" />}
                   {p}
                 </span>
               ))}
